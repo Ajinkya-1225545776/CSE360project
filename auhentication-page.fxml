@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="authentication_pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizzatype.AuhenticationController">
+   <children>
+      <TitledPane animated="false" layoutY="-2.0" prefHeight="400.0" prefWidth="600.0" text="Authentication">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="383.0" prefWidth="598.0">
+               <children>
+                  <TextField fx:id="textUserID" layoutX="299.0" layoutY="86.0" />
+                  <TextField fx:id="textPassword" layoutX="299.0" layoutY="162.0" />
+                  <Label layoutX="121.0" layoutY="85.0" prefHeight="27.0" prefWidth="119.0" text="Student Usename" />
+                  <Label layoutX="121.0" layoutY="161.0" prefHeight="27.0" prefWidth="119.0" text="Password" />
+                  <Button fx:id="authenticationButton" layoutX="299.0" layoutY="225.0" mnemonicParsing="false" onAction="#onAuthenticationClick" prefHeight="25.0" prefWidth="117.0" text="Authenticate" />
+                  <Button fx:id="clearButton" layoutX="143.0" layoutY="225.0" mnemonicParsing="false" onAction="#onClearClick" prefHeight="25.0" prefWidth="117.0" text="Clear" />
+                  <TextArea fx:id="textfield" layoutX="412.0" layoutY="307.0" prefHeight="54.0" prefWidth="172.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>
